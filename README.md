@@ -70,16 +70,29 @@ Please visit http://www.java.com for information on installing Java.
 - Java Development Kit の略
 - Java のプログラムの開発や実行を行うためのプログラムのかたまり
 
-### JDKのインストールパス
+### JDKのインストールされているパス
 - `/Library/Java/JavaVirtualMachines`
 
-#### JDKのアンインストール方法
+### JDKのアンインストール方法
+方法1：コマンドライン実行でアンインストールしたい場合は下記コマンド叩く
 ```
 cd /Library/Java/JavaVirtualMachines
 sudo rm -rf zulu-13.jdk
 ```
 - 間違って他のJDKインストールした人は上記コマンドでアンインストール
 - 上記のJDKファイル名は適宜変える
+
+方法2：Finder上で上記ファイルを消してもアンインストールされる
+
+### インストールされたか確認
+
+`java -version` 叩いて 下記表示されたら インストール成功している
+
+```
+openjdk version "13.0.5.1" 2020-11-06
+OpenJDK Runtime Environment Zulu13.35+1025-CA (build 13.0.5.1+1-MTS)
+OpenJDK 64-Bit Server VM Zulu13.35+1025-CA (build 13.0.5.1+1-MTS, mixed mode)
+```
 
 ---
 
